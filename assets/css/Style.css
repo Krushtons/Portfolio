@@ -1,0 +1,111 @@
+:root {
+    --primary-dark: #260c1a;
+    --secondary-dark: #432e36;
+    --tertiary-dark: #5f4842;
+    --primary-light: #af8d86;
+    --secondary-light: #edbfc6;
+}
+
+body {
+    background-color: var(--primary-dark);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*HEADER AND NAV BAR STYLES START*/
+
+header {
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    top: 0;
+}
+
+header h1 {
+    color: var(--secondary-light);
+    font-size: 30px;
+    font-weight: normal;
+
+ }
+
+nav {
+    color: var(--secondary-light);
+    font-size: 25px;
+    margin: 0;
+    padding: 0 20px;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+
+}
+
+header nav ul li a:hover {
+    background-color: var(--tertiary-dark);
+    color: var(--primary-light)
+}
+    
+
+    /*HEADER AND NAV STYLES END*/
+
+    /*Hero/Jumbotron*/
+
+.hero {
+    background-image: url("../images/hero-bg.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-position: 80%;
+    padding-top: 200px;
+    margin: 0;
+    border: 1px solid white;
+}
+
+.hero h1 {
+    color: var(--secondary-light);
+    font-size: 80px;
+    text-align: center;
+    text-decoration: underline;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-bottom: 0;
+    text-shadow: 1px 1px black;
+}
+
+.hero h2 {
+    color: var(--tertiary-dark);
+    flex-direction: column;
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+}
+/*Hero/Jumbotron styles end*/
+
+/*Projects*/
+.project-display {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: 
+
+ }
+
+.project-title {
+    color: var(--primary-light);
+    text-align: center;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.project-list {
+     color: var(--primary-light)
+}
