@@ -6,11 +6,6 @@
     --secondary-light: #edbfc6;
 }
 
-body {
-    background-color: var(--primary-dark);
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 /*HEADER AND NAV BAR STYLES START*/
 
 header {
@@ -21,10 +16,11 @@ header {
     top: 0;
 }
 
-header h1 {
+header h1 a {
     color: var(--secondary-light);
     font-size: 30px;
     font-weight: normal;
+    text-decoration: none;
 
  }
 
@@ -44,14 +40,16 @@ header nav ul {
 }
 
 header nav ul li a {
+    list-style-type: none;
     padding: 10px 15px;
     font-weight: lighter;
+    color: var(--primary-light)
+
 
 }
 
 header nav ul li a:hover {
-    background-color: var(--tertiary-dark);
-    color: var(--primary-light)
+      color: white;
 }
     
 
@@ -99,27 +97,94 @@ header nav ul li a:hover {
  }
 
 .title {
+    margin: 20px;
     color: var(--primary-light);
     text-align: center;
-    font-size: 20px;
+    font-size: 30px;
     text-decoration: underline;
 }
 
 .project-list{
-    background-color: var(--tertiary-dark);
+    display: flex;
+    flex-wrap: wrap;
     border: 3px solid var(--primary-light);
     color: var(--primary-light);
-    margin: 20px 40px;
+    margin: 50px 200px;
     padding: 20px;
 }
 
-.text-right {
-    text-align: right;
+.one {
+    background-image: url("../images/horiseon.jpg");
+    background-size: cover;
+    margin: 50px 200px;
 }
 
-.about-me {
-    img
+.one a {
+    display: flex;
+    flex-wrap: wrap;
+    color: var(--primary-dark);
+    text-decoration: none;
+    font-size: 240px;
+    justify-content: left;
+}
+
+.two {
+    background-color: white;
+    justify-content: right;
+    font-size: 50px;
+}
+
+.three {
+    background-color: white;
+    justify-content: left;
+    font-size: 30px;
+}
+
+/*Projects End*/
+
+/*About Me Styes*/
+.info-display p {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
     color: var(--primary-light);
     font-size: 20px;
-    text-align: center;
+    text-align: left;
+    padding: 50px 50px 350px 50px;
+    margin-bottom: 50px;
+}
+
+.info-display img {
+    float: left;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid white;
+}
+/*About Me End Styles*/
+
+/*Contact Info Styles*/
+.contact-info {
+    display: flex;
+    justify-content: left;
+    color: var(--primary-light);
+    font-size: 20px;
+    text-align: left;
+    margin: 50px;
+}
+
+.contact-info a {
+    color: var(--primary-light);
+    text-decoration: none;
+}
+/*Contact Info End*/
+
+/*utilities*/
+a:hover {
+    color: white;
+}
+
+body {
+    background-color: var(--primary-dark);
+    font-family: Arial, Helvetica, sans-serif;
 }
