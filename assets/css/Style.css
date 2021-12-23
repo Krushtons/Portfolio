@@ -116,7 +116,7 @@ header nav ul li a:hover {
 .one {
     background-image: url("../images/horiseon.jpg");
     background-size: cover;
-    margin: 50px 200px;
+    margin: 60px 30px;
 }
 
 .one a {
@@ -132,12 +132,14 @@ header nav ul li a:hover {
     background-color: white;
     justify-content: right;
     font-size: 50px;
+    Margin: 30px;
 }
 
 .three {
     background-color: white;
     justify-content: left;
     font-size: 30px;
+    margin: 30px;
 }
 
 /*Projects End*/
@@ -156,7 +158,7 @@ header nav ul li a:hover {
 
 .info-display img {
     float: left;
-    margin: 0;
+    margin: 10px;
     display: flex;
     flex-wrap: wrap;
     border: 1px solid white;
@@ -179,6 +181,24 @@ header nav ul li a:hover {
 }
 /*Contact Info End*/
 
+/*Footer Styles*/
+footer {
+    background: var(--primary-light);
+    padding: 20px 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+footer h3 {
+    color: var(--primary-dark);
+    font-size: 20px;
+    margin: 0;
+}
+
+/*End footer*/
+
 /*utilities*/
 a:hover {
     color: white;
@@ -187,4 +207,158 @@ a:hover {
 body {
     background-color: var(--primary-dark);
     font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Media Query for Smaller Desktop Screens and smaller*/
+@media screen and (max-width: 980px) {
+
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+    .hero {
+        width: 100%;
+    }
+
+    .project-display a {
+        flex: 0 100%;
+        font-size: 110px;
+        Margin: 100px 0;
+    }
+
+    .project-display h3 {
+        flex: 0 100%;
+    }
+
+    .info-display p {
+        margin: 10px 10px;
+    }
+
+    footer {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+ /* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+    header {
+    justify-content: center;
+    position: relative;
+    }
+    
+    header h1 {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    header nav ul {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    header nav ul li a {
+        font-size: 20px;
+    }   
+    
+    .hero {
+        width: 100%;
+    }
+    
+    .project-display a {
+        flex: 0 100%;
+        font-size: 110px;
+        Margin: 100px 0;
+    }   
+    
+    .project-display h3 {
+        flex: 0 100%;
+    }
+    
+    .info-display p {
+        flex: 0 100%;
+        margin: 10px 10px;
+    }
+    
+    footer {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+    header {
+        flex: 0 100%;
+        justify-content: center;
+        position: relative;
+     }
+    
+    header h1 {
+        width: 100%;
+        margin-left: 70px;
+        justify-content: space-around;
+    }
+    
+    header nav ul {
+        width: 100%;
+        justify-content: space-around;
+    }
+    
+    header nav ul li a {
+        font-size: 30px;
+    }
+    
+    .hero {
+        width: 100%;
+        justify-content: space-around;
+        margin: 0 50px;
+    }
+
+    .project-display a {
+        flex: 0 100%;
+        font-size: 50px;
+        Margin: 100px 20px;
+    }      
+    
+    .two {
+        font-size: 40px;
+    }
+
+    .project-display h3 {
+        flex: 0 100%;
+    }
+    
+    .info-display img {
+        flex: 0 100%;
+        margin: 10px 0;
+    }
+
+    .info-display p {
+        text-align: center;
+        justify-content: space-around;
+        margin: 50px;
+    }
+
+    footer {
+        text-align: center;
+        width: 100%;
+    }
 }
