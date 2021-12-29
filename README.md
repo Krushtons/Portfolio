@@ -8,3 +8,4 @@ Kaitlyn Smith's portfolio including example pages, contact info, and about me.
 
 
 ## Link
+https://krushtons.github.io/Portfolio/
